@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LifeOfChuck.MainPage"
+             BackgroundColor="HotPink" 
+             BackgroundImageSource="chucky2.png" >
+    
+
+    <StackLayout>
+        <!-- Place new controls here />-->
+        <Label 
+            Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+           />
+
+
+        <Label x:Name="JokeLabel" 
+               HeightRequest="200" 
+               TextColor ="Black" 
+               FontSize ="Large" 
+               FontFamily="normal" 
+               FontAttributes="Bold"/>
+        <Button x:Name="JokeButton" 
+                BackgroundColor="Black"  
+                Text="press for joke" 
+                TextColor="WhiteSmoke" 
+                CornerRadius="100" 
+                Font="15"  
+                Clicked="Button_Pressed1"/>
+        <Button x:Name="CategoryButton" 
+                BackgroundColor="Black"  
+                Text="Catorgory"
+                TextColor="WhiteSmoke" 
+                CornerRadius="200"
+                Font="15"
+                Clicked="CategoryButton_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>
